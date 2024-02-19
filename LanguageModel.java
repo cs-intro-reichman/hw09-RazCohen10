@@ -119,9 +119,6 @@ public class LanguageModel {
             window = initialText.substring(initialText.length() - windowLength);
             while (text.length() - windowLength < textLength) 
             {
-                //manually added
-                System.out.println(text.length() + " - " + text);
-                //
                 if (CharDataMap.containsKey(window))
                 {
                     c = getRandomChar(CharDataMap.get(window));
